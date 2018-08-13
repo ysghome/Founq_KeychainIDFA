@@ -9,6 +9,6 @@ Pod::Spec.new do |s|
   s.osx.deployment_target = '10.9'
   s.source       = { :git => "https://github.com/ysghome/Founq_KeychainIDFA.git", :tag => s.version.to_s }
   s.source_files  = 'Pod/Classes', 'Pod/Classes/**/*.{h,m}'
-  s.library = 'Foundation'
+  s.frameworks = "Foundation","Security"
   s.requires_arc = true
 end

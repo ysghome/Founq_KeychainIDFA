@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		6AC45E312121947500815678 /* KeychainHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC45E2D2121947500815678 /* KeychainHelper.m */; };
 		6AC45E322121947500815678 /* KeychainIDFA.m in Sources */ = {isa = PBXBuildFile; fileRef = 6AC45E302121947500815678 /* KeychainIDFA.m */; };
+		6AC45E35212198F500815678 /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AC45E34212198F500815678 /* Security.framework */; };
 		994A97B31A42769200EEA677 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 994A97B21A42769200EEA677 /* main.m */; };
 		994A97B61A42769200EEA677 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 994A97B51A42769200EEA677 /* AppDelegate.m */; };
 		994A97B91A42769200EEA677 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 994A97B81A42769200EEA677 /* ViewController.m */; };
@@ -22,6 +23,7 @@
 		6AC45E2E2121947500815678 /* KeychainIDFA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeychainIDFA.h; path = Pod/Classes/KeychainIDFA.h; sourceTree = SOURCE_ROOT; };
 		6AC45E2F2121947500815678 /* KeychainHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = KeychainHelper.h; path = Pod/Classes/KeychainHelper.h; sourceTree = SOURCE_ROOT; };
 		6AC45E302121947500815678 /* KeychainIDFA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = KeychainIDFA.m; path = Pod/Classes/KeychainIDFA.m; sourceTree = SOURCE_ROOT; };
+		6AC45E34212198F500815678 /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		994A97AD1A42769200EEA677 /* KeychainIDFA.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KeychainIDFA.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		994A97B11A42769200EEA677 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		994A97B21A42769200EEA677 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -39,6 +41,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6AC45E35212198F500815678 /* Security.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,11 +59,20 @@
 			name = Classes;
 			sourceTree = "<group>";
 		};
+		6AC45E33212198F500815678 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AC45E34212198F500815678 /* Security.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		994A97A41A42769200EEA677 = {
 			isa = PBXGroup;
 			children = (
 				994A97AF1A42769200EEA677 /* KeychainIDFA */,
 				994A97AE1A42769200EEA677 /* Products */,
+				6AC45E33212198F500815678 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
