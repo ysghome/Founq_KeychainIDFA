@@ -26,6 +26,7 @@ Founq_KeychainIDFA. 获取idfa标示当设备唯一识别,并保存到keychain�
     [KeychainIDFA deleteIDFA]//删除Keychain中IDFA(一般不用)
     
 ### pod 添加：
-    在Podfile文件中添加下面代码，然后使用：``pod update`` 进行更新就可以了，有可能 ``pod search Founq_KeychainIDFA`` 不能搜索到
-    ```pod 'Founq_KeychainIDFA' #idfa获取```
+       >  在Podfile文件中添加下面代码，然后使用：``pod update`` 进行更新就可以了，有可能 ``pod search Founq_KeychainIDFA`` 不能搜索到
+    
+       pod 'Founq_KeychainIDFA' #idfa获取
     
